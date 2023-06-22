@@ -7,7 +7,7 @@ from llama_index import GPTSimpleVectorIndex, SimpleDirectoryReader, LLMPredicto
 from langchain.llms.openai import OpenAI
 
 # Define a simple Streamlit app
-st.title("Ask Llama")
+st.title("杭萧SAP交流会问答机器人")
 query = st.text_input("What would you like to ask? (source: data/paul_graham_essay.txt)", "")
 
 # If the 'Submit' button is clicked
