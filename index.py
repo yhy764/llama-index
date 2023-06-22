@@ -17,10 +17,10 @@ if st.button("提问"):
     else:
         try:
             # This example uses text-davinci-003 by default; feel free to change if desired
-            llm_predictor = LLMPredictor(llm=OpenAI(temperature=0, model_name="text-davinci-003"))
-
+            #llm_predictor = LLMPredictor(llm=OpenAI(temperature=0, model_name="text-davinci-003"))
+            llm_predictor = LLMPredictor(llm=OpenAI(temperature=0, model_name="gpt-3.5-turbo"))
             # Configure prompt parameters and initialise helper
-            max_input_size = 2*4096
+            max_input_size = 4096
             num_output = 256
             max_chunk_overlap = 20
 
