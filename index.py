@@ -8,10 +8,10 @@ from langchain.llms.openai import OpenAI
 
 # Define a simple Streamlit app
 st.title("杭萧SAP交流会问答机器人")
-query = st.text_input("您可以询问任何关于会议内容的问题? (数据来源于两天的会议录音纪要)", "")
+query = st.text_input("您可以询问任何关于会议内容的问题? (数据来源于两天的会议录音纪要，注：问题答案可能为英文)", "")
 
 # If the 'Submit' button is clicked
-if st.button("Submit"):
+if st.button("提问"):
     if not query.strip():
         st.error(f"Please provide the search query.")
     else:
